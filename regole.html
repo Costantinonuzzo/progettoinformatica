@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css" integrity="sha512-NmLkDIU1C/C88wi324HBc+S2kLhi08PN5GDeUVVVC/BVt/9Izdsc9SVeVfA1UZbY3sHUlDSyRXhCzHfr6hmPPw==" crossorigin="anonymous" />
+
+  <link rel="stylesheet" href="style.css">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flickity/2.2.1/flickity.min.css" integrity="sha512-ztsAq/T5Mif7onFaDEa5wsi2yyDn5ygdVwSSQ4iok5BPJQGYz1CoXWZSA7OgwGWrxrSrbF0K85PD5uLpimu4eQ==" crossorigin="anonymous" />
+
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700;900&display=swap" rel="stylesheet">
+
+</head>
+<body>
+
+  <div class="header">
+    <div class="logo">
+      <img src="logo.png" alt="">
+    </div>
+    <ul class="menu">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="single.html">Storia</a></li>
+      <li><a href="contatti.html">Contatti</a></li>
+    </ul>
+    <div class="cta">
+    <a href="contatti.html" class="button">Contatti</a>
+
+    </div>
+    <div class="hamburger">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+  </div>
+
+  <div class="hero hero--small">
+    <div class="hero__content">
+      <p class="intro-text"></p>
+      <h1 class="big-text">Informatica:</h1>
+    </div>
+  </div>
+
+
+
+
+  <div class="content">
+    <h3 class="normal-text">Cose principali da sapere:</h3>
+<p> L’ informatica è la scienza dell’ elaborazione automatica dell’ informazione mediante un Elaboratore informatico,
+in termini informatici la risoluzione automatica dei problemi tramite dei dati di input(dati iniziali) si ricavano i dati di output(risultati)
+questo tipo di operazioni si risolvono facendo uso degli algoritmi: ovvero una sequenza di istruzioni che eseguite risolvono un problema.
+
+Per far si che gli algoritmi vengano eseguiti devono essere codificati con un linguaggio di programmazione per poi eseguiti tramite un processo di esecuzione.
+
+L’interpretazione:
+l’algoritmo codificato chiamato codice sorgente viene elaborato dall’ interprete riga per riga eseguendolo.
+Compilazione:
+il compilatore da un codice sorgente ne ricava il codice tradotto detto codice oggetto o eseguibile.
+Esistono tre tipologie di linguaggi di programmazione:
+
+Linguaggio di basso livello: Assembly
+I linguaggi di questa tipologia sono i piu difficili da imparare perche sono quelli che si avvicinano di piu alla macchina e bisogna conoscerne l’intera struttura per impararli bene,
+I linguaggi di basso livello non necessitano di un compilatore sono direttamente tradotti ed eseguiti direttamente dalla CPU, possono essere usati per creare programmi che interragiscono con i componenti hardware della macchina stessa,
+la sintassi del linguaggio cambia a seconda dal tipo di processore quindi ogni processore utilizza un assembly diverso.
+Linguaggi di alto livello : C, C++, Python
+sono i linguaggi piu facili da imparare perche son quelli che si avvicinano di piu all’utente, per essere eseguiti necessita di altro programma chiamato compilatore
+Linguaggi di altissimo livello : SQL
+sono i linguaggi utilizzati da programmatori con grandi conoscenze nell’ ambito della programmazione sono progettati per eseguire solo lavori specifici ad esempio: la gestione dei database su un server web.</p>
+  </div>
+
+
+  <footer class="footer">
+    <div class="grid">
+      <div class="col">
+        <h4 class="normal-text tw">Posta eletronica certifiata PEC:</h4>
+        <p>cetf2000x@pec.istruzione.it</p>
+      </div>
+      <div class="col">
+        <h4 class="normal-text tw">Indirizzo:</h4>
+        <p>Via Laviano 18, 81100 Caserta</p>
+      </div>
+      <div class="col">
+        <h4 class="normal-text tw">Fax</h4>
+        <p>80009010614</p>
+      </div>
+      <div class="col">
+        <h4 class="normal-text tw">Posta eletronica istituzionale:</h4>
+        <p>ceft02000x@istruzione.it</p>
+      </div>
+    </div>
+  </footer>
+
+
+
+
+  <!-- Jquery -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/flickity/2.2.1/flickity.pkgd.min.js" integrity="sha512-Nx/M3T/fWprNarYOrnl+gfWZ25YlZtSNmhjHeC0+2gCtyAdDFXqaORJBj1dC427zt3z/HwkUpPX+cxzonjUgrA==" crossorigin="anonymous"></script>
+
+  <script>
+  $( document ).ready(function() {
+
+    /* Open Panel */
+    $( ".hamburger" ).on('click', function() {
+      $(".menu").toggleClass("menu--open");
+    });
+
+  });
+</script>
+
+
+</body>
+</html>
